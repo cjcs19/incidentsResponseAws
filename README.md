@@ -1,3 +1,16 @@
+# incidentsResponseAws
+### Prerequisitos
+
+- La primera version de este desarrollo contempla desplegar una estacion de trabajo para realizar capturas de evidencia de una ec2 comprometida.
+- En la estacion de trabajo forense, se hace un mount de un S3 para enviar la evidencia recolectada en la estacion de trabajo.
+- Credenciales de aws con privilegios de crear ec2, roles, s3, ssm.
+- Terraform v1.0.3.
+- Linux, Mac.
+
+## Arquitectura General
+
+![the picture](./resources/arquitectura/General.png)
+
 ### Prerequisitos
 
 - La primera version de este desarrollo contempla desplegar una estacion de trabajo para realizar capturas de evidencia de una ec2 comprometida.
