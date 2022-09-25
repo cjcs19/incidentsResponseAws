@@ -30,6 +30,8 @@
 ### Consideraciones:
 - La ami de la estacion de trabajo es la **ami-0590cdbf53c13b6ea**,  que por los momento la coloquè publica para poder ejecutar  la evalucacion, dejar los valores como estan.
 - El punto de montura /opt/datatoanalize es un enlace al s3 para descargar la informacion recolectada.
+- La ec2 desplegada para test, es para el desarrollo, TODO, colocar como opcion este despliegue
 - **Es una primera version**.
+
 
 
