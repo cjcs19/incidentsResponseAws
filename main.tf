@@ -99,7 +99,8 @@ module "parameters" {
 
   source        ="./parameters"
 
-  instancetoinv = module.ec2totest.idEc2ToTest
+  instancetoinv = var.GIdEc2ToResearch != "" ? var.GIdEc2ToResearch : module.ec2totest.idEc2ToTest
+
   bucketcollect = module.storageS3.name_aws_s3_bucket_collect
 
   env         = "${var.GtagEnv}"

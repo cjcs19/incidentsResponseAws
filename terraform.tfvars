@@ -7,12 +7,12 @@ Gapp               = "incident_response"
 Gprofile           = "dev"
 Gproject           = "incident_response"
 
-GBucketName         = "incident-response-24092022"
+GBucketName         = " " #TODO
 
 GAMBIENTE="DEV"
 
-GIdEc2ToResearch  =       "idc1"
-GBucketCollect    =      "incident-response-24092022"
+GIdEc2ToResearch  =       ""
+GBucketCollect    =      ""
 
 ####################################################################
 # Bastion
@@ -23,7 +23,7 @@ Gpublic_key_bastion = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+fILVuf/oY0hjAURBO
 GNameSecret="testForensic"
 
 
-Gsubnet_pub_all_cidr   = "subnet-05f1dc7c4dfedf5f1"
-Gvpc_id                = "vpc-b0ae60cd"
-Gvpc_cidr              = "172.31.0.0/16"
+Gsubnet_pub_all_cidr   = ""
+Gvpc_id                = ""
+Gvpc_cidr              = ""
 

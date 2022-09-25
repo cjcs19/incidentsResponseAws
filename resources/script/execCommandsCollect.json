@@ -1,0 +1,8 @@
+{
+    "Parameters": {
+        "commands": [
+            "#!/bin/bash",
+            "foremost -v -t jpg -i /dev/xvdf2 -o /opt/datatoanalize"
+        ]
+    }
+}
