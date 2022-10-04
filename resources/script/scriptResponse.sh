@@ -12,7 +12,7 @@ sleep 35
 
 
 
-s3fs $bucketcollect /opt/data -o iam_role="ec2_role_incident_response"
+sudo s3fs $bucketcollect /opt/data -o iam_role="ec2_role_incident_response"
 
 echo "Iniciando ...."
 
@@ -56,7 +56,7 @@ ec2Local=$(curl http://169.254.169.254/latest/meta-data/instance-id)
         --instance-id ${ec2Local}  --device /dev/sdf
 
 
-    mkdir -p /opt/datatoanalize
+    sudo mkdir -p /opt/datatoanalize
 
     echo "Terminando de incorporar $volumenToMount volumen a la estacion Forense  ."
     sleep 65

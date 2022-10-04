@@ -37,7 +37,7 @@ module "bastion" {
   env         = "${var.GtagEnv}"
 
   ambiente    = "${var.GAMBIENTE}"
-  subnet_id   = "subnet-05f1dc7c4dfedf5f1"
+  subnet_id   = "${var.GsubnetId}"
   public_key  = "${var.Gpublic_key_bastion}"
   sg-bastion  = module.security.ec2_security_group_ssh_id
   project     = "${var.Gproject}"
@@ -75,12 +75,13 @@ module "storageS3" {
 # Testing Propose
 ###################################################################
 module "ec2totest" {
+  
   source      = "./ec2totest"
 
   env         = "${var.GtagEnv}"
 
   ambiente    = "${var.GAMBIENTE}"
-  subnet_id   = "subnet-05f1dc7c4dfedf5f1"
+  subnet_id   = "${var.GsubnetId}"
   public_key  = "${var.Gpublic_key_bastion}"
   sg-bastion  = module.security.ec2_security_group_ssh_id
   project     = "${var.Gproject}-Test"

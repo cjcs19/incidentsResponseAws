@@ -8,7 +8,6 @@ Gprofile           = "dev"
 Gproject           = "incident_response"
 
 GBucketName         = " " #TODO
-
 GAMBIENTE="DEV"
 
 GIdEc2ToResearch  =       ""
@@ -22,8 +21,8 @@ Gpublic_key_bastion = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+fILVuf/oY0hjAURBO
 #El Secreto
 GNameSecret="testForensic"
 
-
-Gsubnet_pub_all_cidr   = ""
-Gvpc_id                = ""
-Gvpc_cidr              = ""
-
+###Networking
+Gsubnet_pub_all_cidr   = "172.31.244.0/24"
+Gvpc_id                = "vpc-b0ae60cd"
+Gvpc_cidr              = "172.31.0.0/16"
+GsubnetId              = "subnet-05f1dc7c4dfedf5f1"
